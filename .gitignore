@@ -1,1 +1,7 @@
 executable
+.vscode/
+Book Resources/
+GPATH
+GRTAGS
+GSYMS
+GTAGS
