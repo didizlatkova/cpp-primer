@@ -22,7 +22,10 @@ int main()
 
     for (string &w : words)
     {
-        w[0] = toupper(w[0]);
+        for (auto &c : w)
+        {
+            c = toupper(c);
+        }
     }
 
     for (string w : words)

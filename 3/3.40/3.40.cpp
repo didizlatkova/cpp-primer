@@ -12,11 +12,12 @@ using namespace std;
 
 int main()
 {
-    char a1[10] = "hello";
+    char a1[] = "hello";
     char a2[] = "world";
-    char a3[10] = "";
+    char a3[sizeof(a1) + sizeof(a2) - 1];
 
-    strcpy(a3, strcat(a1, a2));
+    strcpy(a3, a1);
+    strcat(a3, a2);
 
     for (char c : a3)
     {

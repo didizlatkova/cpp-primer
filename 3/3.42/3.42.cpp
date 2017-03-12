@@ -11,9 +11,9 @@ using namespace std;
 int main()
 {
     vector<int> v = {2, 5, 9};
-    int a1[3];
+    int a1[v.size()];
 
-    for (size_t i = 0; i < sizeof(a1) / sizeof(*a1); i++)
+    for (size_t i = 0; i < v.size(); i++)
     {
         a1[i] = v[i];
     }

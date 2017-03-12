@@ -19,14 +19,20 @@ int main()
         numbers.push_back(n);
     }
 
-    for (size_t i = 0; i < numbers.size() - 1; i += 2)
+    for (size_t i = 0; i < numbers.size() - 1; i++)
     {
         cout << numbers[i] + numbers[i + 1] << endl;
     }
 
+    // Changed program:
     for (size_t i = 0; i < numbers.size() / 2; i++)
     {
         cout << numbers[i] + numbers[numbers.size() - i - 1] << endl;
+    }
+
+    if (numbers.size() % 2 != 0)
+    {
+        cout << numbers[numbers.size() / 2] << endl;
     }
 
     return 0;

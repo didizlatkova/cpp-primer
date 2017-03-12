@@ -26,6 +26,8 @@ int main()
         }
     }
 
+    // Rewrite the programs from the previous exercises using a
+    // type alias for the type of the loop control variables.
     using int_array = int[colCnt];
 
     // version 1 - for range

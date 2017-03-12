@@ -22,15 +22,22 @@ int main()
 
     int diff = numbers.end() - numbers.begin();
 
-    for (auto i = numbers.begin(); i < numbers.end() - 1; i += 2)
+    for (auto i = numbers.begin(); i < numbers.end() - 1; i++)
     {
         cout << *i + *(i + 1) << endl;
     }
 
+    // Changed program:
+    int offset;
     for (auto i = numbers.begin(); i < numbers.begin() + diff / 2; i++)
     {
-        int offset = numbers.end() - i - 1;
+        offset = numbers.end() - i - 1;
         cout << *i + *(numbers.begin() + offset) << endl;
+    }
+
+    if (diff % 2 != 0)
+    {
+        cout << *(numbers.begin() + diff / 2) << endl;
     }
 
     return 0;

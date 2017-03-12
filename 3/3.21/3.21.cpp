@@ -14,7 +14,7 @@ int main()
     int n;
     vector<int> numbers(4);
     auto i = numbers.begin();
-    while (cin >> n)
+    while (cin >> n && i != numbers.end())
     {
         *i = n;
         i++;

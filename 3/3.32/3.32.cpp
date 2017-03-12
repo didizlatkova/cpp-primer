@@ -4,6 +4,7 @@ another array. Rewrite your program to use vectors.
 */
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -19,6 +20,19 @@ int main()
     for (size_t i = 0; i < 10; i++)
     {
         copied[i] = arr[i];
+    }
+
+    // Rewritten using vectors:
+    vector<int> vec(10);
+    for (size_t i = 0; i < 10; i++)
+    {
+        vec.push_back(i);
+    }
+
+    vector<int> copiedVec(10);
+    for (size_t i = 0; i < 10; i++)
+    {
+        copiedVec.push_back(vec[i]);
     }
 
     return 0;
